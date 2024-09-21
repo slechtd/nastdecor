@@ -24,6 +24,7 @@ body {
     height: auto; /* Maintains aspect ratio */
 }
 
+
 .header-social {
     color: #FFFFFF; /* Set text color to white */
     text-decoration: none; /* Remove underline */
@@ -144,7 +145,7 @@ a:hover {
 }
 
 .custom-btn-primary:hover {
-    background-color: #e0b724; /* Darker color on hover */
+    background-color: #ffcd29; /* Darker color on hover */
     text-decoration: none; /* Ensure no underline on hover */
 }
 
@@ -211,7 +212,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:hover {
-    accent-color: #ffcd29; /* Darker green on hover */
+    accent-color: #e0b724; /* Darker green on hover */
 }
 
 .u-link {
