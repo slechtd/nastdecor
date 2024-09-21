@@ -24,11 +24,29 @@ body {
     height: auto; /* Maintains aspect ratio */
 }
 
-/* New styles for header social links */
+/* New styles for header social links 
 .header-social {
-    color: #1a1919; /* Set text color to black */
+    color: #1a1919;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Specific adjustments for header social links 
+.header-social {
+    color: #FFFFFF;
+}
+*/
+
+.header-social {
+    color: #FFFFFF; /* Set text color to white */
     text-decoration: none; /* Remove underline */
     white-space: nowrap; /* Prevent text wrapping */
+}
+
+
+.header-social:hover {
+    color: #FFFFFF; /* Hover color for social links */
+    text-decoration: underline;
 }
 
 .header-social img {
@@ -53,16 +71,6 @@ a {
 a:hover {
     color: #1a1919; /* Change this for hover effect, if desired */
     text-decoration: underline; /* Ensure no underline on hover */
-}
-
-/* Specific adjustments for header social links */
-.header-social {
-    color: #FFFFFF; /* Use the same color as the general link style */
-}
-
-.header-social:hover {
-    color: #FFFFFF; /* Hover color for social links */
-    text-decoration: underline;
 }
 
 @media (max-width: 767px) {
