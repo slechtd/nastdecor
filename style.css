@@ -24,19 +24,6 @@ body {
     height: auto; /* Maintains aspect ratio */
 }
 
-/* New styles for header social links 
-.header-social {
-    color: #1a1919;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-/* Specific adjustments for header social links 
-.header-social {
-    color: #FFFFFF;
-}
-*/
-
 .header-social {
     color: #FFFFFF; /* Set text color to white */
     text-decoration: none; /* Remove underline */
@@ -157,7 +144,7 @@ a:hover {
 }
 
 .custom-btn-primary:hover {
-    background-color: #ffcd29; /* Darker color on hover */
+    background-color: #e0b724; /* Darker color on hover */
     text-decoration: none; /* Ensure no underline on hover */
 }
 
@@ -224,7 +211,7 @@ input[type="checkbox"]:checked {
 }
 
 input[type="checkbox"]:hover {
-    accent-color: #e0b724; /* Darker green on hover */
+    accent-color: #ffcd29; /* Darker green on hover */
 }
 
 .u-link {
