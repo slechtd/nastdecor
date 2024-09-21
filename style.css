@@ -149,7 +149,7 @@ a:hover {
 }
 
 .custom-btn-primary:hover {
-    background-color: #e0b724; /* Darker color on hover */
+    background-color: #ffcd29; /* Darker color on hover */
     text-decoration: none; /* Ensure no underline on hover */
 }
 
