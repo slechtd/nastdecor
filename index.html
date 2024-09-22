@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NΔSTDECOR - Stěrky Nastoupil</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -21,35 +19,29 @@
 
     <header class="bg-header py-3" id="header">
         <div class="container">
-                <div class="col-md-6 text-left text-md-left">
-                    <img src="images/logo_black.png" alt="nastdecor" class="img-fluid logo">
+            <div class="col-md-6 text-left text-md-left">
+                <img src="images/logo_black.png" alt="nastdecor" class="img-fluid logo">
                 </div>
-
                 <div class="container">
-                    <div class="row text-center text-md-left">
-                        <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                            <img src="images/phone_icon_inverted.png" alt="telefon" class="img-fluid social-icon-img">
-                            <a href="tel:+420608651792" class="mb-0 ml-2 header-social">+420 608 651 792</a> 
+                        <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center mb-3 mb-lg-0">
+                            <img src="images/phone_icon_inverted.png" alt="Phone Icon" class="me-2 social-icon-img">
+                            <a href="tel:+420608651792" class="header-social no-wrap">+420 608 651 792</a>
                         </div>
-                        <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                            <img src="images/mail_icon_inverted.png" alt="email" class="img-fluid social-icon-img">
-                            <a href="mailto:patrik.nastoupil@seznam.cz" class="mb-0 ml-2 header-social">FrescoCZ@gmail.com</a>
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center mb-3 mb-lg-0">
+                            <img src="images/mail_icon_inverted.png" alt="Mail Icon" class="me-2 social-icon-img">
+                            <a href="mailto:patrik.nastoupil@seznam.cz" class="header-social no-wrap">FrescoCZ@gmail.com</a>
                         </div>
-                        <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                            <a href="https://facebook.com/nastdecor" class="d-flex align-items-center">
-                                <img src="images/fb_icon_inverted.png" alt="facebook" class="img-fluid social-icon-img">
-                                <p class="mb-0 ml-2 header-social">Facebook</p>
-                            </a>
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center mb-3 mb-lg-0">
+                            <img src="images/fb_icon_inverted.png" alt="Facebook Icon" class="me-2 social-icon-img">
+                            <a href="https://facebook.com/nastdecor" class="header-social no-wrap" target="_blank" rel="noopener noreferrer">facebook.com/nastdecor</a>
                         </div>
-                        <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                            <a href="https://instagram.com/nastdecor" class="d-flex align-items-center">
-                                <img src="images/inst_icon_inverted.png" alt="instagram" class="img-fluid social-icon-img">
-                                <p class="mb-0 ml-2 header-social">Instagram</p>
-                            </a>
+                        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center">
+                            <img src="images/inst_icon_inverted.png" alt="Instagram Icon" class="me-2 social-icon-img">
+                            <a href="https://instagram.com/nastdecor" class="header-social no-wrap" target="_blank" rel="noopener noreferrer">instagram.com/nastdecor</a>
                         </div>
-                    </div>
+                        </div>
                 </div>
-  
         </div>
     </header>
     
@@ -80,7 +72,7 @@
     
     <!-- CTA Button -->
     <div class="text-center my-4">
-        <a href="#contact" class="custom-btn custom-btn-primary btn-lg same-tab">Nezávazná poptávka</a>
+        <a href="#contact" class="custom-btn btn-lg same-tab">Nezávazná poptávka</a>
     </div>
     
     <!-- Work Images -->
@@ -125,7 +117,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="text-center w-100">
-                        <button type="button" class="custom-btn custom-btn-primary" data-dismiss="modal">Zavřít</button>
+                        <button type="button" class="custom-btn" data-dismiss="modal">Zavřít</button>
                     </div>
                 </div>
             </div>
@@ -136,7 +128,7 @@
     <section class="py-5">
         <div class="container">
             <h2 class="text-left mb-4">Navštivte showroom v Lysé nad Labem</h2>
-            <div class="map-link d-flex align-items-center mb-4">
+            <div class="d-flex align-items-center mb-4">
                 <a href="https://maps.app.goo.gl/EMrsCw632iBFigza6" class="d-flex align-items-center">
                     <img src="images/map_icon.png" alt="mapa" class="social-icon-img mr-2">
                     <p class="mb-0">Zobrazit na mapě</p>
@@ -162,11 +154,12 @@
     <!-- Kontrolovat response z Azure? COnfirmation/error pop-up -->
      
 
+    
     <!-- Contact -->
     <section class="py-5" id="contact">
         <div class="container">
             <h2 class="text-left mb-4">Kontaktujte mě</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST">
+            <form id="contactForm" action="send_email.php" method="POST">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <input type="text" class="form-control" name="name" placeholder="Jméno a příjmení" required>
@@ -194,40 +187,38 @@
                         </label>
                     </div>
                     <div class="col-md-4 text-right mb-4">
-                        <button type="submit" class="custom-btn custom-btn-primary btn-lg">Odeslat</button>
+                        <button type="submit" class="custom-btn btn-lg">Odeslat</button>
                     </div>
                 </div>
             </form>
         </div>
     </section>
 
+
     <!-- Bottom Socials -->
-    <section id="socials" class="py-2">
+    <section class="contact-info py-4">
         <div class="container">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                    <img src="images/phone_icon.png" alt="telefon" class="img-fluid social-icon-img">
-                    <a href="tel:+420608651792" class="mb-0 ml-2">+420 608 651 792</a> 
-                </div>
-                <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                    <img src="images/mail_icon.png" alt="email" class="img-fluid social-icon-img">
-                    <a href="mailto:patrik.nastoupil@seznam.cz" class="mb-0 ml-2">FrescoCZ@gmail.com</a>
-                </div>
-                <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                    <a href="https://facebook.com/nastdecor" class="d-flex align-items-center">
-                        <img src="images/fb_icon.png" alt="facebook" class="img-fluid social-icon-img">
-                        <p class="mb-0 ml-2">Facebook</p>
-                    </a>
-                </div>
-                <div class="col-md-3 col-12 mb-3 d-flex align-items-center">
-                    <a href="https://instagram.com/nastdecor" class="d-flex align-items-center">
-                        <img src="images/inst_icon.png" alt="instagram" class="img-fluid social-icon-img">
-                        <p class="mb-0 ml-2">Instagram</p>
-                    </a>
-                </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center mb-3 mb-lg-0">
+              <img src="images/phone_icon.png" alt="Phone Icon" class="me-2 social-icon-img">
+              <a href="tel:+420608651792" class="no-wrap">+420 608 651 792</a>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center mb-3 mb-lg-0">
+              <img src="images/mail_icon.png" alt="Mail Icon" class="me-2 social-icon-img">
+              <a href="mailto:patrik.nastoupil@seznam.cz" class="no-wrap">FrescoCZ@gmail.com</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center mb-3 mb-lg-0">
+              <img src="images/fb_icon.png" alt="Facebook Icon" class="me-2 social-icon-img">
+              <a href="https://facebook.com/nastdecor" target="_blank" rel="noopener noreferrer">facebook.com/nastdecor</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center">
+              <img src="images/inst_icon.png" alt="Instagram Icon" class="me-2 social-icon-img">
+              <a href="https://instagram.com/nastdecor" target="_blank" rel="noopener noreferrer">instagram.com/nastdecor</a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <!-- Terms Modal -->
     <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
@@ -244,7 +235,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="text-center w-100">
-                        <button type="button" class="custom-btn custom-btn-primary" data-dismiss="modal">Zavřít</button>
+                        <button type="button" class="custom-btn" data-dismiss="modal">Zavřít</button>
                     </div>
                 </div>
             </div>
@@ -269,7 +260,7 @@
     <div id="cookieConsent" class="cookie-consent" style="display: none;">
         <div class="container d-flex justify-content-between align-items-center">
             <p class="mb-0">Cookies: Používáme nezbytné technické cookies pro zajištění chodu webu. <a href="#" data-toggle="modal" data-target="#termsModal">Zjistit více</a></p>
-            <button id="closeCookieConsent" class="custom-btn custom-btn-primary">V pořádku</button>
+            <button id="closeCookieConsent" class="custom-btn">V pořádku</button>
         </div>
     </div>
 

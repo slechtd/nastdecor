@@ -1,4 +1,4 @@
-/* Custom styles */
+/* GENERAL */
 
 html {
     scroll-behavior: smooth;
@@ -8,52 +8,50 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
+/* HEADER */
+
 .bg-header {
-    background-color: #1a1919; /* Set the desired background color */
-    width: 100%; /* Ensure it spans the full width */
+    background-color: #1a1919;
+    width: 100%;
 }
 
 .logo {
-    max-width: 400px; /* Adjust this value as needed */
-    width: 100%; /* Allows it to be responsive */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
+
+/* SOCIALS */
 
 .social-icon-img {
-    width: 25px; /* Adjust this value as needed */
-    height: auto; /* Maintains aspect ratio */
+    width: 25px;
+    height: auto;
+    margin-right: 7px; /* Add space to the right of the image */
 }
 
+
+/* HEADER (WHITE) SOCIAL LINKS */
 
 .header-social {
-    color: #FFFFFF; /* Set text color to white */
-    text-decoration: none; /* Remove underline */
-    white-space: nowrap; /* Prevent text wrapping */
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-
 .header-social:hover {
-    color: #FFFFFF; /* Hover color for social links */
+    color: #FFFFFF;
     text-decoration: underline;
 }
 
-.header-social img {
-    margin-right: 0.5rem; /* Space between icon and text */
-}
+/* BASIC BLACK LINKS */
 
-/* Flexbox for header social layout */
-#header .row {
-    display: flex; /* Ensure flexbox layout */
-}
-
-#header .social-column {
-    flex: 1; /* Make each social column take equal space */
-}
-
-/* Link Styles */
 a {
-    color: #1a1919; /* Change this to your desired link color */
-    text-decoration: none; /* Remove underline */
+    color: #1a1919;
+    text-decoration: none;
 }
 
 a:hover {
@@ -61,159 +59,7 @@ a:hover {
     text-decoration: underline; /* Ensure no underline on hover */
 }
 
-@media (max-width: 767px) {
-    #header .social-column {
-        width: 100%; /* Stack items in a single column on small screens */
-    }
-
-    #header .row {
-        flex-direction: column; /* Stack social links below the logo */
-        align-items: center; /* Center the items */
-    }
-}
-
-/* Default behavior for smaller screens: center the image */
-.text-center {
-    text-align: center;
-}
-
-#intro .custom-align {
-    text-align: center; /* For small screens */
-}
-
-/* For medium viewports (768px - 991px), adjust column and layout */
-@media (min-width: 768px) and (max-width: 991px) {
-    #socials .col-md-3 {
-        flex: 0 0 100%; /* Make each social element take full width */
-        max-width: 100%;
-    }
-    
-    #intro .row {
-        flex-wrap: wrap;
-    }
-
-    #intro .custom-align {
-        text-align: right; /* Aligns image to the right */
-        padding-right: 20px; /* Adjusts the spacing */
-    }
-}
-
-/* For larger viewports (992px and up), adjust image alignment */
-@media (min-width: 992px) {
-    #intro .custom-align {
-        text-align: right; /* Align image to the right on larger screens */
-        padding-right: 40px; /* Fine-tune this as necessary */
-    }
-
-    #intro .row {
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
-}
-
-/* Custom alignment for larger screens */
-@media (min-width: 768px) {
-    .custom-align {
-        text-align: right; /* Aligns the image more to the right */
-        padding-right: 0px; /* Fine-tunes the position, adjust as needed */
-    }
-}
-
-.profile-photo {
-    max-width: 230px; /* Adjust this value to change the maximum size */
-    width: auto; /* Allows the image to maintain its aspect ratio */
-    height: auto; /* Ensures the image doesn't get distorted */
-    margin: 0 auto; /* Centers the image in its container */
-}
-
-/* Custom button base */
-.custom-btn {
-    padding: 10px 20px; /* Adjust the padding for button size */
-    font-size: 20px; /* Adjust font size */
-    border-radius: 8px; /* Rounded corners */
-    border: none; /* Remove default border */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-    text-decoration: none; /* Remove link underline */
-    display: inline-block; /* Make the link behave like a button */
-    white-space: nowrap;
-}
-
-/* Primary Button Styles */
-.custom-btn-primary {
-    background-color: #ffcd29; /* Primary button background */
-    color: #1a1919; /* Text color */
-}
-
-.custom-btn-primary:hover {
-    background-color: #ffcd29; /* Darker color on hover */
-    text-decoration: none; /* Ensure no underline on hover */
-}
-
-/* Remove default link styles */
-.custom-btn:link,
-.custom-btn:visited {
-    color: #1a1919; /* Ensure text color is same as the button color */
-    text-decoration: none; /* Remove link underline */
-}
-
-
-.clickable-image {
-    cursor: pointer;
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-.clickable-image:hover {
-    transform: scale(1.02);
-    opacity: 0.8; /* Slightly dim the image */
-}
-
-.modal-lg {
-    max-width: 60%; /* Adjust this percentage to make it larger */
-    width: auto;    /* Allows the modal to take its natural width */
-}
-
-.modal-content {
-    margin: 0 auto; /* Center the modal */
-}
-
-.modal-body {
-    display: flex; /* Use flexbox to center the image */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-
-#modalImage {
-    max-width: 100%; /* Ensure the image is responsive */
-    max-height: 80vh; /* Limit height to prevent overflow */
-}
-
-/* Ensure the modal dialog is centered and has adequate width on small viewports */
-.modal-dialog {
-    max-width: 90%; /* Adjust to your liking, ensures it's not too narrow */
-    width: auto;    /* Allow the modal to take its natural width */
-    margin: 0 auto; /* Center the modal dialog */
-}
-
-/* For small viewports, adjust the modal content */
-@media (max-width: 767px) {
-    .modal-lg {
-        max-width: 90%; /* Increase modal width on small screens */
-    }
-
-    .modal-content {
-        width: 100%; /* Ensure content takes full width */
-        margin: 0; /* Remove margin to avoid misalignment */
-    }
-}
-
-
-input[type="checkbox"]:checked {
-    accent-color: #ffcd29; /* Green when checked */
-}
-
-input[type="checkbox"]:hover {
-    accent-color: #e0b724; /* Darker green on hover */
-}
+/* UNDERSCORED LINKS */
 
 .u-link {
     text-decoration: underline; /* Make link always underlined */
@@ -224,42 +70,156 @@ input[type="checkbox"]:hover {
     text-decoration: underline; /* Keep the underline on hover */
 }
 
+/* PROFILE PIC */
+
+.profile-photo {
+    max-width: 230px; /* Adjust this value to change the maximum size */
+    width: auto; /* Allows the image to maintain its aspect ratio */
+    height: auto; /* Ensures the image doesn't get distorted */
+    margin: 0 auto; /* Centers the image in its container */
+}
+
+.text-center {
+    text-align: center;
+}
+
+#intro .custom-align {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    #intro .custom-align {
+        text-align: right;
+        padding-right: 0px;
+    }
+}
+
+/* BUTTON */
+
+.custom-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #ffcd29;
+    color: #1a1919;
+}
+
+.custom-btn:hover {
+    background-color: #ffcd29;
+    text-decoration: none;
+}
+
+.custom-btn:link,
+.custom-btn:visited {
+    color: #1a1919;
+    text-decoration: none;
+}
+
+/* GALERY IMAGE */
+
+.clickable-image {
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.clickable-image:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+}
+
+/* MODAL */
+
+.modal-lg {
+    max-width: 60%;
+    width: auto;
+}
+
+.modal-content {
+    margin: 0 auto;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalImage {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.modal-dialog {
+    max-width: 90%;
+    width: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .modal-lg {
+        max-width: 90%;
+    }
+
+    .modal-content {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* CONTACT FORM CHECKBOX */
+
+input[type="checkbox"]:checked {
+    accent-color: #ffcd29;
+}
+
+input[type="checkbox"]:hover {
+    accent-color: #e0b724;
+}
+
+/* FOOTER */
+
 footer {
     font-size: 0.9rem;
     background-color: #1a1919;
 }
 
-/* Cookie banner */
+/* COOKIE BANNER */
 
 .cookie-consent {
-    position: fixed; /* Fixed position */
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1a1919; /* Background color */
-    color: #ffffff; /* Text color */
-    padding: 10px 20px; /* Padding for the banner */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    z-index: 9999; /* Ensure it appears above other content */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    background-color: #1a1919;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .cookie-consent .container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space between text and button */
-    width: 100%; /* Make it full width */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .cookie-consent p {
-    margin: 0; /* Remove margin for the paragraph */
+    margin: 0;
 }
 
 .cookie-consent a {
-    color: #ffcd29; /* Link color */
-    text-decoration: underline; /* Underline links */
+    color: #ffcd29;
+    text-decoration: underline;
 }
 
 .cookie-consent button {
-    margin-left: 20px; /* Space between text and button */
+    margin-left: 20px;
 }
