@@ -172,6 +172,18 @@ a:hover {
     }
 }
 
+.status-modal-width {
+    max-width: 400px;
+}
+
+.modal-dialog {
+    margin: 0 auto; /* Center the modal */
+}
+
+.modal-content {
+    padding: 20px; /* Add some padding if needed */
+}
+
 /* CONTACT FORM CHECKBOX */
 
 input[type="checkbox"]:checked {
