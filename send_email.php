@@ -17,8 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = "Poptávka: $name";
         $headers = "From: info@nastdecor.cz" . "\r\n" .
                    "Reply-To: " . $email . "\r\n" .
-                   "X-Mailer: PHP/" . phpversion();
-        
+                   "X-Mailer: PHP/" . phpversion() . "\r\n" .
+                   "Content-Type: text/plain; charset=UTF-8" . "\r\n" .
+                   "MIME-Version: 1.0";
+
         // Construct message body
         $email_message = "Z kontaktního formuláře nastdecor.cz ti přišla nová zpráva:\n\n";
         $email_message .= "Jméno a příjmení: " . $name . "\n";
